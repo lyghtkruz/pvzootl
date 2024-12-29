@@ -1,3 +1,5 @@
-# Godot 4+ specific ignores
+# Godot ignores
 .godot/
-/android/
+
+# Binary exclusions
+builds/
