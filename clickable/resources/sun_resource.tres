@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ClickableItem" load_steps=2 format=3 uid="uid://yuxhhetldwbp"]
+
+[ext_resource type="Script" path="res://clickable/clickable_item.gd" id="1_0fteo"]
+
+[resource]
+script = ExtResource("1_0fteo")
+name = "Sun"
+call_signal = "sun"
+value = 25
+description = ""
+super_power_duration = 5.0
