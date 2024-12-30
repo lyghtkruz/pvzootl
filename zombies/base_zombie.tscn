@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgyutww7eqx65"]
+
+[ext_resource type="Script" path="res://zombies/base_zombie.gd" id="1_phugn"]
+
+[node name="BaseZombie" type="Sprite2D"]
+script = ExtResource("1_phugn")
+
+[node name="hitbox" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 20
+
+[node name="shape" type="CollisionShape2D" parent="hitbox"]
