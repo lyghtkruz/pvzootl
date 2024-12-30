@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ZombieWaves" load_steps=5 format=3 uid="uid://dfaegumxelnn5"]
+
+[ext_resource type="Script" path="res://levels/zombie_waves.gd" id="1_16cmq"]
+[ext_resource type="Script" path="res://levels/zombie_wave_entry.gd" id="2_rb2va"]
+[ext_resource type="PackedScene" uid="uid://dnag3a7yisuir" path="res://zombies/zombie_types/basic_zombie.tscn" id="3_wvs3v"]
+
+[sub_resource type="Resource" id="Resource_jt3bk"]
+script = ExtResource("2_rb2va")
+zombie_type = ExtResource("3_wvs3v")
+amount = 20
+
+[resource]
+script = ExtResource("1_16cmq")
+wave = Array[ExtResource("2_rb2va")]([SubResource("Resource_jt3bk")])
