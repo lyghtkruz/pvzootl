@@ -23,6 +23,9 @@ func _spin() -> void:
 	isSpinning = true
 	tween.play()
 
+func _exit_tree() -> void:
+	_stop()
+
 func _stop() -> void:
 	if not isSpinning: 
 		return
