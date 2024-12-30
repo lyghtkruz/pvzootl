@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://4is6m260yypj"]
+
+[ext_resource type="Script" path="res://ui/planting/plot.gd" id="1_d363v"]
+
+[node name="Plot" type="ColorRect"]
+custom_minimum_size = Vector2(78, 93)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.5
+offset_top = -46.5
+offset_right = 39.5
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+color = Color(0.572549, 1, 0.529412, 1)
+script = ExtResource("1_d363v")

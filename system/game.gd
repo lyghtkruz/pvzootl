@@ -1,11 +1,27 @@
 extends Node
 
+var isPlanting: bool = false
+
 ## Signals
+signal planting
 signal sun
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	planting.connect(_planting)
+	isPlanting = true
+
+func _planting(enter: bool) -> void:
+	if enter:
+		_start_planting()
+		return
+	_stop_planting()
+
+func _start_planting() -> void:
+	isPlanting = true
+
+func _stop_planting() -> void:
+	isPlanting = false
 
 func _squelch_warnings() -> void:
 	## Godot warns about unused signals that are declared in a script without being explicitly called
@@ -13,4 +29,5 @@ func _squelch_warnings() -> void:
 	if true:
 		return
 	
+	planting.emit()
 	sun.emit()

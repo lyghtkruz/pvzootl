@@ -20,18 +20,19 @@ func _on_mouse_exit() -> void:
 	has_focus = false
 
 func _input(event: InputEvent) -> void:
-	if not has_focus:
-		return
-	
 	if not event.is_action_pressed("click"):
 		return
 	
+	if not has_focus:
+		return
+		
 	_click()
 
 func _click() -> void:
 	if not is_clickable:
 		return
 	
+	get_viewport().set_input_as_handled()
 	is_clickable = false
 	if Game.has_signal(item_res.call_signal):
 		Game.emit_signal(item_res.call_signal, item_res.value)
