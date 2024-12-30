@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://ui/planting/plot.gd" id="1_d363v"]
 
 [node name="Plot" type="ColorRect"]
+self_modulate = Color(1, 1, 1, 0.137255)
 custom_minimum_size = Vector2(78, 93)
 anchors_preset = 8
 anchor_left = 0.5

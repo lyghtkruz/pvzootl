@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://dnag3a7yisuir"]
+
+[ext_resource type="PackedScene" uid="uid://bgyutww7eqx65" path="res://zombies/base_zombie.tscn" id="1_hlj3o"]
+[ext_resource type="Texture2D" uid="uid://c0m2b6bh0rr0k" path="res://assets/placeholder/TEMP_ZOMBO.png" id="2_iqvm8"]
+[ext_resource type="Resource" uid="uid://uc700jtuh2dk" path="res://zombies/resources/basic_zombie.tres" id="3_spggg"]
+[ext_resource type="Script" path="res://components/zombies/shuffle.gd" id="4_qwrny"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p2k3b"]
+height = 90.0
+
+[node name="BasicZombie" instance=ExtResource("1_hlj3o")]
+texture = ExtResource("2_iqvm8")
+zombie_resource = ExtResource("3_spggg")
+
+[node name="Shuffle" type="Node" parent="." index="0"]
+script = ExtResource("4_qwrny")
+
+[node name="shape" parent="hitbox" index="0"]
+position = Vector2(-9, 0)
+shape = SubResource("CapsuleShape2D_p2k3b")

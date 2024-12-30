@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://fgv3aack35rj"]
+
+[ext_resource type="PackedScene" uid="uid://1odbo8rcduov" path="res://plants/BasePlant.tscn" id="1_3bu8y"]
+[ext_resource type="Resource" uid="uid://seu1mt8ftj51" path="res://plants/resources/pea_shooter.tres" id="2_il527"]
+[ext_resource type="Texture2D" uid="uid://c7kh2ak0p8if1" path="res://assets/placeholder/temp_pea.png" id="2_ldg13"]
+[ext_resource type="PackedScene" uid="uid://drweeecy42v10" path="res://plants/projectiles/pea.tscn" id="4_3l5l1"]
+
+[node name="PeaShooter" instance=ExtResource("1_3bu8y")]
+texture = ExtResource("2_ldg13")
+plant_resource = ExtResource("2_il527")
+projectile = ExtResource("4_3l5l1")
+
+[node name="detector" parent="." index="0"]
+target_position = Vector2(725, 0)
+
+[node name="spawn" type="Marker2D" parent="." index="2"]
+position = Vector2(24, -8)

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Zombies" load_steps=2 format=3 uid="uid://uc700jtuh2dk"]
+
+[ext_resource type="Script" path="res://zombies/zombie.gd" id="1_na752"]
+
+[resource]
+script = ExtResource("1_na752")
+attack_speed = 0.5
+damage = 100
+hit_points = 270
+speed = 10

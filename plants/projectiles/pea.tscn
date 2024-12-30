@@ -1,0 +1,9 @@
+[gd_scene load_steps=4 format=3 uid="uid://drweeecy42v10"]
+
+[ext_resource type="PackedScene" uid="uid://desvwhypne2k4" path="res://plants/base_projectile.tscn" id="1_abgpu"]
+[ext_resource type="Texture2D" uid="uid://bokb5ryu13faj" path="res://assets/placeholder/TEMPPEA_PROJ.png" id="2_wx0tl"]
+[ext_resource type="Resource" uid="uid://d33nlf8206qen" path="res://plants/resources/pea_projectile.tres" id="3_oo82u"]
+
+[node name="pea_projectile" instance=ExtResource("1_abgpu")]
+texture = ExtResource("2_wx0tl")
+projectile_resource = ExtResource("3_oo82u")

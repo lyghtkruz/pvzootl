@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Plants" load_steps=2 format=3 uid="uid://seu1mt8ftj51"]
+
+[ext_resource type="Script" path="res://plants/plant.gd" id="1_cidgo"]
+
+[resource]
+script = ExtResource("1_cidgo")
+name = "Unnamed Plant"
+hit_points = 6
+sun_cost = 50
+dig_cost = 25
+has_attack = true
+attack_speed = 1.425
+is_ranged = true

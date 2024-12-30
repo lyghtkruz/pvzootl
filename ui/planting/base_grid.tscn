@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://4is6m260yypj" path="res://ui/planting/plot.tscn" id="2_tduyb"]
 
 [node name="BaseGrid" type="Node2D"]
+metadata/_edit_vertical_guides_ = [250.0, 975.0]
 
 [node name="background" type="TextureRect" parent="."]
 offset_top = 119.0

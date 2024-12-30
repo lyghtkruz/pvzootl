@@ -1,16 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://5ty1lr228jyp"]
+[gd_scene load_steps=7 format=3 uid="uid://5ty1lr228jyp"]
 
 [ext_resource type="PackedScene" uid="uid://cs58ntl7klf8o" path="res://clickable/base_clickable_item.tscn" id="1_f4ee5"]
-[ext_resource type="Texture2D" uid="uid://2qj6o53uwn3c" path="res://assets/placeholder/Untitled645_20241228214905.png" id="2_prmq7"]
+[ext_resource type="Texture2D" uid="uid://8bqly3542dvh" path="res://assets/placeholder/sun.png" id="2_pbufa"]
 [ext_resource type="Resource" uid="uid://yuxhhetldwbp" path="res://clickable/resources/sun_resource.tres" id="3_6yxtm"]
 [ext_resource type="Script" path="res://components/drop_in.gd" id="4_84752"]
+[ext_resource type="Script" path="res://components/spin.gd" id="5_kef6r"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bw18j"]
-radius = 120.0
+radius = 26.0
 
 [node name="sun" instance=ExtResource("1_f4ee5")]
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_prmq7")
+texture = ExtResource("2_pbufa")
 item_res = ExtResource("3_6yxtm")
 
 [node name="click_shape" parent="click_area" index="0"]
@@ -18,3 +18,6 @@ shape = SubResource("CircleShape2D_bw18j")
 
 [node name="DropIn" type="Node" parent="." index="1"]
 script = ExtResource("4_84752")
+
+[node name="Spin" type="Node" parent="." index="2"]
+script = ExtResource("5_kef6r")
