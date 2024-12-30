@@ -34,11 +34,9 @@ func _setup_attack() -> void:
 	attack_timer.timeout.connect(_attack)
 
 func _attack() -> void:
-	print("attack?")
 	var new_projectile = projectile.instantiate()
 	add_child(new_projectile)
 	new_projectile.global_position = spawn.global_position
-	print(new_projectile.name)
 
 func _physics_process(_delta: float) -> void:
 	if detector.is_colliding():

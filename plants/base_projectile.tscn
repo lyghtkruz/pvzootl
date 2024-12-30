@@ -4,3 +4,9 @@
 
 [node name="BaseProjectile" type="Sprite2D"]
 script = ExtResource("1_glon7")
+
+[node name="hurtbox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox"]
