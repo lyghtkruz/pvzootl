@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://d2556if2flk66"]
+
+[ext_resource type="FontFile" uid="uid://cprwai2eyfuwh" path="res://assets/fonts/simple_handmade/SimpleHandmade.otf" id="1_vxn7c"]
+
+[resource]
+default_font = ExtResource("1_vxn7c")
+default_font_size = 32

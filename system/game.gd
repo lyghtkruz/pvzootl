@@ -5,23 +5,18 @@ var isPlanting: bool = false
 ## Signals
 signal planting
 signal sun
+signal snap
 
-# Called when the node enters the scene tree for the first time.
+var plantingScene: Sprite2D
+var plant_area: Node2D
+var projectiles_area: Node2D
+
 func _ready() -> void:
 	planting.connect(_planting)
-	isPlanting = true
-
-func _planting(enter: bool) -> void:
-	if enter:
-		_start_planting()
-		return
-	_stop_planting()
-
-func _start_planting() -> void:
-	isPlanting = true
-
-func _stop_planting() -> void:
 	isPlanting = false
+
+func _planting() -> void:
+	isPlanting = true
 
 func _squelch_warnings() -> void:
 	## Godot warns about unused signals that are declared in a script without being explicitly called
@@ -30,4 +25,5 @@ func _squelch_warnings() -> void:
 		return
 	
 	planting.emit()
+	snap.emit()
 	sun.emit()

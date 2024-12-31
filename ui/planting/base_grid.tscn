@@ -1,17 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bhc34c3uso376"]
+[gd_scene load_steps=2 format=3 uid="uid://bhc34c3uso376"]
 
-[ext_resource type="Texture2D" uid="uid://c41jfhnfbevgq" path="res://assets/placeholder/level_background.webp" id="1_qq70r"]
 [ext_resource type="PackedScene" uid="uid://4is6m260yypj" path="res://ui/planting/plot.tscn" id="2_tduyb"]
 
 [node name="BaseGrid" type="Node2D"]
 metadata/_edit_vertical_guides_ = [250.0, 975.0]
-
-[node name="background" type="TextureRect" parent="."]
-offset_top = 119.0
-offset_right = 1400.0
-offset_bottom = 719.0
-mouse_filter = 2
-texture = ExtResource("1_qq70r")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 custom_minimum_size = Vector2(725, 475)

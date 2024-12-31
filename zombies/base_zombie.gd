@@ -1,7 +1,11 @@
 extends Sprite2D
 
 @export var zombie_resource: Zombies
-@onready var isDead: bool = false
+@onready var isDead: bool = false:
+	set(value):
+		isDead = value
+		if isDead:
+			_die()
 
 @onready var hitbox: Area2D = $hitbox
 @onready var current_hp: int = 0
@@ -31,6 +35,9 @@ func _flash() -> void:
 	flash_tween.tween_property(material, "shader_parameter/flash_amount", 1.0, 0.1)
 	flash_tween.tween_property(material, "shader_parameter/flash_amount", 0.0, 0.1)
 	flash_tween.play()
+
+func _die() -> void:
+	queue_free()
 
 func _physics_process(_delta: float) -> void:
 	pass

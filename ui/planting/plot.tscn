@@ -16,6 +16,6 @@ offset_right = 39.5
 offset_bottom = 46.5
 grow_horizontal = 2
 grow_vertical = 2
-mouse_default_cursor_shape = 2
+mouse_filter = 1
 color = Color(0.572549, 1, 0.529412, 1)
 script = ExtResource("1_d363v")

@@ -22,12 +22,12 @@ func _spawn() -> void:
 		spawn_timer.stop()
 		return
 	
-	spawn_timer.wait_time = randf_range(1.5, 3.0)
+	spawn_timer.wait_time = randf_range(3.5, 6.0)
 	var random_zombie: int = randi_range(1, wave_level.size()) -1
 	var zombie = wave_level[random_zombie].zombie_type.instantiate()
 	add_child(zombie)
 	zombie.global_position.x = 1060
-	zombie.global_position.y = randi_range(1, 5) * 100 + 107
+	zombie.global_position.y = randi_range(1, 5) * 100 + 117
 	wave_level[random_zombie].amount -= 1
 	if wave_level[random_zombie].amount == 0:
 		wave_level.remove_at(random_zombie) 
