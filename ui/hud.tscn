@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://d118tfvkow3u8"]
+[gd_scene load_steps=5 format=3 uid="uid://d118tfvkow3u8"]
 
 [ext_resource type="Script" path="res://ui/hud.gd" id="1_i1ix1"]
 [ext_resource type="FontFile" uid="uid://cprwai2eyfuwh" path="res://assets/fonts/simple_handmade/SimpleHandmade.otf" id="2_6to8f"]
+[ext_resource type="PackedScene" uid="uid://ce7luqaidcv0i" path="res://ui/test_plant_picker.tscn" id="3_slnxi"]
 
 [sub_resource type="Theme" id="Theme_iigrp"]
 default_font = ExtResource("2_6to8f")
@@ -9,18 +10,16 @@ default_font = ExtResource("2_6to8f")
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_i1ix1")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -75.5
-offset_right = 75.5
-offset_bottom = 88.0
-grow_horizontal = 2
-alignment = 1
+[node name="bar" type="GridContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 8
 
-[node name="sun_label" type="Label" parent="HBoxContainer"]
+[node name="sun_label" type="Label" parent="bar"]
 layout_mode = 2
 theme = SubResource("Theme_iigrp")
 theme_override_font_sizes/font_size = 64
-text = "Sun: "
+text = "Sun"
+
+[node name="TestPlantPicker" parent="bar" instance=ExtResource("3_slnxi")]
+layout_mode = 2

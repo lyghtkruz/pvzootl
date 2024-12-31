@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://ce7luqaidcv0i"]
+
+[ext_resource type="Texture2D" uid="uid://bv4tm8blol78g" path="res://assets/placeholder/Seed_Packet_BlankLayout.png" id="1_fsfp1"]
+[ext_resource type="Script" path="res://ui/test_plant_picker.gd" id="1_h0lp5"]
+[ext_resource type="Texture2D" uid="uid://c7kh2ak0p8if1" path="res://assets/placeholder/temp_pea.png" id="2_7efo7"]
+[ext_resource type="PackedScene" uid="uid://fgv3aack35rj" path="res://plants/plant_types/pea_shooter.tscn" id="2_tyaqb"]
+[ext_resource type="Theme" uid="uid://d2556if2flk66" path="res://ui/plant_theme.tres" id="3_rgqnc"]
+
+[node name="TestPlantPicker" type="ColorRect"]
+custom_minimum_size = Vector2(136, 176)
+mouse_filter = 2
+color = Color(0.634821, 0.341126, 4.81307e-07, 1)
+script = ExtResource("1_h0lp5")
+plant_scene = ExtResource("2_tyaqb")
+
+[node name="card_backing" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 383.0
+offset_bottom = 508.0
+scale = Vector2(0.32, 0.32)
+mouse_filter = 0
+texture = ExtResource("1_fsfp1")
+
+[node name="plant_shadow" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 19.0
+offset_top = 18.0
+offset_right = 128.0
+offset_bottom = 99.0
+mouse_filter = 2
+texture = ExtResource("2_7efo7")
+
+[node name="plant" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 20.0
+offset_right = 125.0
+offset_bottom = 101.0
+mouse_filter = 2
+texture = ExtResource("2_7efo7")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 117.0
+offset_right = 79.0
+offset_bottom = 149.0
+theme = ExtResource("3_rgqnc")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+text = "100"

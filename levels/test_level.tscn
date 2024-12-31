@@ -1,18 +1,17 @@
-[gd_scene load_steps=9 format=3 uid="uid://b2ri7f6xmww0y"]
+[gd_scene load_steps=8 format=3 uid="uid://b2ri7f6xmww0y"]
 
 [ext_resource type="Script" path="res://levels/test_level.gd" id="1_6fery"]
 [ext_resource type="PackedScene" uid="uid://d118tfvkow3u8" path="res://ui/hud.tscn" id="2_b8grl"]
 [ext_resource type="Texture2D" uid="uid://c41jfhnfbevgq" path="res://assets/placeholder/level_background.webp" id="2_vsdkg"]
-[ext_resource type="PackedScene" uid="uid://dnag3a7yisuir" path="res://zombies/zombie_types/basic_zombie.tscn" id="4_s5tjp"]
-[ext_resource type="PackedScene" uid="uid://fgv3aack35rj" path="res://plants/plant_types/pea_shooter.tscn" id="5_4jdob"]
 [ext_resource type="Script" path="res://components/day_time.gd" id="6_o543n"]
+[ext_resource type="PackedScene" uid="uid://bhc34c3uso376" path="res://ui/planting/base_grid.tscn" id="6_wla2r"]
 [ext_resource type="Script" path="res://components/zombie_spawner.gd" id="7_s1twv"]
 [ext_resource type="Resource" uid="uid://dfaegumxelnn5" path="res://levels/wave_resources/zombie_wave_01.tres" id="8_dcb2l"]
 
 [node name="level" type="Node2D"]
 script = ExtResource("1_6fery")
 metadata/_edit_vertical_guides_ = [279.0, 950.0, 1060.0]
-metadata/_edit_horizontal_guides_ = [171.0, 692.0]
+metadata/_edit_horizontal_guides_ = [171.0, 692.0, 151.0]
 
 [node name="background" type="TextureRect" parent="."]
 offset_top = 119.0
@@ -22,16 +21,11 @@ texture = ExtResource("2_vsdkg")
 
 [node name="HUD" parent="." instance=ExtResource("2_b8grl")]
 
-[node name="clickables" type="Node2D" parent="."]
+[node name="projectiles" type="Node2D" parent="."]
 
-[node name="BasicZombie" parent="." instance=ExtResource("4_s5tjp")]
-position = Vector2(1094, 325)
+[node name="plants" type="Node2D" parent="."]
 
-[node name="PeaShooter2" parent="." instance=ExtResource("5_4jdob")]
-position = Vector2(376, 448)
-
-[node name="PeaShooter3" parent="." instance=ExtResource("5_4jdob")]
-position = Vector2(304, 341)
+[node name="BaseGrid" parent="." instance=ExtResource("6_wla2r")]
 
 [node name="DayTime" type="Node" parent="."]
 script = ExtResource("6_o543n")
@@ -39,3 +33,5 @@ script = ExtResource("6_o543n")
 [node name="ZombieSpawner" type="Node" parent="."]
 script = ExtResource("7_s1twv")
 wave_resource = ExtResource("8_dcb2l")
+
+[node name="clickables" type="Node2D" parent="."]

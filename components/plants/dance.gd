@@ -10,10 +10,9 @@ var isDancing: bool = false
 func _ready() -> void:
 	plant = get_parent()
 	original_scale = plant.scale
-	original_pos = plant.position
-	_setup_dance_tween()
 
-func _setup_dance_tween() -> void:
+func dance() -> void:
+	original_pos = plant.position
 	tween = get_tree().create_tween()
 	
 	# stretch scales
@@ -46,21 +45,9 @@ func _setup_dance_tween() -> void:
 	tween.parallel().tween_property(plant, "position", original_pos, dance_speed).set_trans(Tween.TRANS_SINE)
 
 	tween.set_loops()
-
-func dance() -> void:
-	print("Dancing on ", get_parent().name)
-	if isDancing:
-		return
-	
-	isDancing = true
 	tween.play()
 
 func stop() -> void:
-	print("trying to stop ", get_parent().name)
-	if not isDancing:
-		print("I wasn't dancing?")
-		return
-	
-	isDancing = false	
 	tween.stop()
 	plant.scale = original_scale
+	plant.skew = deg_to_rad(0.0)
