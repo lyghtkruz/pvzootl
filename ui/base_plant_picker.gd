@@ -2,9 +2,13 @@ extends ColorRect
 
 # TODO: Make this either custom resource or class to 
 # make it easy to build new 
+@export var card_resource: Cards
+@export var plant_resource: Plants
 
 @onready var card_backing: TextureRect = $card_backing
 @onready var plant: TextureRect = $plant
+@onready var plant_shadow: TextureRect = $plant_shadow
+@onready var plant_cost_label: Label = $plant_cost_label
 
 @export var plant_scene: PackedScene 
 @export var plant_cost: int = 100
@@ -25,6 +29,12 @@ var hasFocus: bool = false
 func _ready() -> void:
 	card_backing.mouse_entered.connect(_on_mouse_over)
 	card_backing.mouse_exited.connect(_on_mouse_exit)
+	
+	card_backing.texture = card_resource.card_back
+	plant.texture = card_resource.plant_texture
+	plant_shadow.texture = card_resource.plant_texture
+	plant_cost_label.text = str(plant_resource.sun_cost)
+	plant_cost = plant_resource.sun_cost
 
 func _on_mouse_over() -> void:
 	hasFocus = true

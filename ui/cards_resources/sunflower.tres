@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Cards" load_steps=5 format=3 uid="uid://dgskdpshtq32e"]
+
+[ext_resource type="Texture2D" uid="uid://d1tdpv1qrchbg" path="res://assets/placeholder/seed_packet newbg.png" id="1_5xcn1"]
+[ext_resource type="Script" path="res://ui/cards.gd" id="1_gcn42"]
+[ext_resource type="PackedScene" uid="uid://ct7vdesg6cn3g" path="res://plants/plant_types/sunflower.tscn" id="2_cugdv"]
+[ext_resource type="Texture2D" uid="uid://d3gmka8ow5mh0" path="res://assets/placeholder/sunflower.png" id="3_01403"]
+
+[resource]
+script = ExtResource("1_gcn42")
+plant_name = "Sunflower"
+plant_scene = ExtResource("2_cugdv")
+card_back = ExtResource("1_5xcn1")
+plant_texture = ExtResource("3_01403")

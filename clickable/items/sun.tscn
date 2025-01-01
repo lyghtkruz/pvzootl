@@ -10,6 +10,8 @@
 radius = 26.0
 
 [node name="sun" instance=ExtResource("1_f4ee5")]
+z_index = 100
+z_as_relative = false
 texture = ExtResource("2_pbufa")
 item_res = ExtResource("3_6yxtm")
 

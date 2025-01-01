@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Plants" load_steps=2 format=3 uid="uid://lk8rwff3yxep"]
+
+[ext_resource type="Script" path="res://plants/plant.gd" id="1_mlt7j"]
+
+[resource]
+script = ExtResource("1_mlt7j")
+name = "Sunflower"
+hit_points = 300
+sun_cost = 50
+dig_cost = 25
+has_attack = false
+attack_speed = 3.0
+is_ranged = false
+is_generator = true

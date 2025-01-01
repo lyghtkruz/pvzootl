@@ -22,7 +22,7 @@ func _spawn() -> void:
 		spawn_timer.stop()
 		return
 	
-	spawn_timer.wait_time = randf_range(3.5, 6.0)
+	spawn_timer.wait_time = randf_range(8.0, 12.0)
 	var random_zombie: int = randi_range(1, wave_level.size()) -1
 	var zombie = wave_level[random_zombie].zombie_type.instantiate()
 	add_child(zombie)

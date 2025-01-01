@@ -4,10 +4,11 @@
 
 [resource]
 script = ExtResource("1_cidgo")
-name = "Unnamed Plant"
-hit_points = 6
-sun_cost = 50
-dig_cost = 25
+name = "Peashooter"
+hit_points = 300
+sun_cost = 100
+dig_cost = 50
 has_attack = true
 attack_speed = 1.425
 is_ranged = true
+is_generator = false

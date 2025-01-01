@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://b2ri7f6xmww0y"]
+[gd_scene load_steps=7 format=3 uid="uid://b2ri7f6xmww0y"]
 
 [ext_resource type="Script" path="res://levels/test_level.gd" id="1_6fery"]
 [ext_resource type="PackedScene" uid="uid://d118tfvkow3u8" path="res://ui/hud.tscn" id="2_b8grl"]
-[ext_resource type="Texture2D" uid="uid://c41jfhnfbevgq" path="res://assets/placeholder/level_background.webp" id="2_vsdkg"]
 [ext_resource type="Script" path="res://components/day_time.gd" id="6_o543n"]
 [ext_resource type="PackedScene" uid="uid://bhc34c3uso376" path="res://ui/planting/base_grid.tscn" id="6_wla2r"]
 [ext_resource type="Script" path="res://components/zombie_spawner.gd" id="7_s1twv"]
@@ -12,12 +11,6 @@
 script = ExtResource("1_6fery")
 metadata/_edit_vertical_guides_ = [279.0, 950.0, 1060.0]
 metadata/_edit_horizontal_guides_ = [171.0, 692.0, 151.0]
-
-[node name="background" type="TextureRect" parent="."]
-offset_top = 119.0
-offset_right = 1400.0
-offset_bottom = 719.0
-texture = ExtResource("2_vsdkg")
 
 [node name="HUD" parent="." instance=ExtResource("2_b8grl")]
 
