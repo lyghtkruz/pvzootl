@@ -17,3 +17,5 @@ collide_with_bodies = false
 script = ExtResource("2_3lnk6")
 
 [node name="attack_timer" type="Timer" parent="."]
+
+[node name="sun_generator" type="Timer" parent="."]

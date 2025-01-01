@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3 uid="uid://ct7vdesg6cn3g"]
+
+[ext_resource type="PackedScene" uid="uid://1odbo8rcduov" path="res://plants/BasePlant.tscn" id="1_wo8ab"]
+[ext_resource type="Resource" uid="uid://lk8rwff3yxep" path="res://plants/resources/sunflower.tres" id="2_4wnkb"]
+[ext_resource type="Texture2D" uid="uid://d3gmka8ow5mh0" path="res://assets/placeholder/sunflower.png" id="2_j3txu"]
+[ext_resource type="PackedScene" uid="uid://c3e4saoydd1qg" path="res://clickable/items/sun_droplets.tscn" id="3_qoac8"]
+
+[node name="BasePlant" instance=ExtResource("1_wo8ab")]
+texture = ExtResource("2_j3txu")
+plant_resource = ExtResource("2_4wnkb")
+projectile = ExtResource("3_qoac8")
+
+[node name="spawn" type="Marker2D" parent="." index="4"]
+position = Vector2(0, 11)

@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://d118tfvkow3u8"]
+[gd_scene load_steps=6 format=3 uid="uid://d118tfvkow3u8"]
 
 [ext_resource type="Script" path="res://ui/hud.gd" id="1_i1ix1"]
 [ext_resource type="FontFile" uid="uid://cprwai2eyfuwh" path="res://assets/fonts/simple_handmade/SimpleHandmade.otf" id="2_6to8f"]
-[ext_resource type="PackedScene" uid="uid://ce7luqaidcv0i" path="res://ui/test_plant_picker.tscn" id="3_slnxi"]
+[ext_resource type="PackedScene" uid="uid://cmonx1571yfxc" path="res://ui/cards/sun_flower.tscn" id="3_im6hb"]
+[ext_resource type="PackedScene" uid="uid://cqpmol8t0t4d1" path="res://ui/cards/peashooter.tscn" id="4_xv7tf"]
 
 [sub_resource type="Theme" id="Theme_iigrp"]
 default_font = ExtResource("2_6to8f")
@@ -21,5 +22,10 @@ theme = SubResource("Theme_iigrp")
 theme_override_font_sizes/font_size = 64
 text = "Sun"
 
-[node name="TestPlantPicker" parent="bar" instance=ExtResource("3_slnxi")]
+[node name="SunFlower" parent="bar" instance=ExtResource("3_im6hb")]
+custom_minimum_size = Vector2(136, 176)
+layout_mode = 2
+
+[node name="peashooter" parent="bar" instance=ExtResource("4_xv7tf")]
+custom_minimum_size = Vector2(136, 176)
 layout_mode = 2

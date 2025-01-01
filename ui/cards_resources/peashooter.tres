@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Cards" load_steps=5 format=3 uid="uid://t3g2uopsao40"]
+
+[ext_resource type="Texture2D" uid="uid://d1tdpv1qrchbg" path="res://assets/placeholder/seed_packet newbg.png" id="1_cax1t"]
+[ext_resource type="Script" path="res://ui/cards.gd" id="1_g13be"]
+[ext_resource type="PackedScene" uid="uid://fgv3aack35rj" path="res://plants/plant_types/pea_shooter.tscn" id="2_wdkey"]
+[ext_resource type="Texture2D" uid="uid://c7kh2ak0p8if1" path="res://assets/placeholder/temp_pea.png" id="3_cg1dm"]
+
+[resource]
+script = ExtResource("1_g13be")
+plant_name = "Peashooter"
+plant_scene = ExtResource("2_wdkey")
+card_back = ExtResource("1_cax1t")
+plant_texture = ExtResource("3_cg1dm")
