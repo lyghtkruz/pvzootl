@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmhhv5wu1qd35"]
+
+[ext_resource type="Script" path="res://ui/screens/menu_button.gd" id="1_nuplk"]
+[ext_resource type="Script" path="res://components/clickable.gd" id="3_dx4eo"]
+
+[node name="menu_button" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("1_nuplk")
+
+[node name="button_shadow" type="TextureRect" parent="."]
+modulate = Color(0.319873, 0.319873, 0.319873, 1)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+
+[node name="button" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+
+[node name="button_shape" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+color = Color(1, 1, 1, 0)
+
+[node name="Clickable" type="Node" parent="button_shape"]
+script = ExtResource("3_dx4eo")
+
+[node name="button_audio_player" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
