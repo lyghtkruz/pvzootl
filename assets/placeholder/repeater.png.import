@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hl08emwtajdd"
-path="res://.godot/imported/flower_golden.png-3bd8034ab9a83887fe2719a841fdb0e3.ctex"
+uid="uid://dv6fqpq65igcf"
+path="res://.godot/imported/repeater.png-8882ae68e4cd7f7b7ee25dd6cd3615bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/placeholder/flower_golden.png"
-dest_files=["res://.godot/imported/flower_golden.png-3bd8034ab9a83887fe2719a841fdb0e3.ctex"]
+source_file="res://assets/placeholder/repeater.png"
+dest_files=["res://.godot/imported/repeater.png-8882ae68e4cd7f7b7ee25dd6cd3615bc.ctex"]
 
 [params]
 

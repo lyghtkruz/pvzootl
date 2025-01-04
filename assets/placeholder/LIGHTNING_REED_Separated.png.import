@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp6kadipsr1jf"
-path="res://.godot/imported/Seed_Packet_BlankLayout - Copy.png-980346662d814007d51ad2ce3415f843.ctex"
+uid="uid://clrmy3jcrputq"
+path="res://.godot/imported/LIGHTNING_REED_Separated.png-f846d14cea9da01d50665ae293fc74cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/placeholder/Seed_Packet_BlankLayout - Copy.png"
-dest_files=["res://.godot/imported/Seed_Packet_BlankLayout - Copy.png-980346662d814007d51ad2ce3415f843.ctex"]
+source_file="res://assets/placeholder/LIGHTNING_REED_Separated.png"
+dest_files=["res://.godot/imported/LIGHTNING_REED_Separated.png-f846d14cea9da01d50665ae293fc74cf.ctex"]
 
 [params]
 

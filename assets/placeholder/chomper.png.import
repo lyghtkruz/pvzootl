@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://buei0dh3db0ws"
-path="res://.godot/imported/flower_violet.png-30209d835df0c31e40a7e309d474d606.ctex"
+uid="uid://cj44cft0ob7l2"
+path="res://.godot/imported/chomper.png-bcf0f2d3803afce6ab1aee66df3bdd20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/placeholder/flower_violet.png"
-dest_files=["res://.godot/imported/flower_violet.png-30209d835df0c31e40a7e309d474d606.ctex"]
+source_file="res://assets/placeholder/chomper.png"
+dest_files=["res://.godot/imported/chomper.png-bcf0f2d3803afce6ab1aee66df3bdd20.ctex"]
 
 [params]
 

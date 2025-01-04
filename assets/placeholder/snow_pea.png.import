@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c72f4ngpf6kt4"
-path="res://.godot/imported/flower_white.png-5a96f1438bae9dbdc54c6a135aa61dad.ctex"
+uid="uid://u2g503duulkq"
+path="res://.godot/imported/snow_pea.png-94c7e598fa8af925f75fd5cf332ecd14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/placeholder/flower_white.png"
-dest_files=["res://.godot/imported/flower_white.png-5a96f1438bae9dbdc54c6a135aa61dad.ctex"]
+source_file="res://assets/placeholder/snow_pea.png"
+dest_files=["res://.godot/imported/snow_pea.png-94c7e598fa8af925f75fd5cf332ecd14.ctex"]
 
 [params]
 

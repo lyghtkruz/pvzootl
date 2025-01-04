@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck0bw01vwddca"
-path="res://.godot/imported/flower_lime.png-5a9e5347d503099a8b4c56b2ae12a202.ctex"
+uid="uid://c71qfkexwwryj"
+path="res://.godot/imported/sunflower_2.png-2c2e697b4e7081ec9b41c8261f1fb57d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/placeholder/flower_lime.png"
-dest_files=["res://.godot/imported/flower_lime.png-5a9e5347d503099a8b4c56b2ae12a202.ctex"]
+source_file="res://assets/placeholder/sunflower_2.png"
+dest_files=["res://.godot/imported/sunflower_2.png-2c2e697b4e7081ec9b41c8261f1fb57d.ctex"]
 
 [params]
 

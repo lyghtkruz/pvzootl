@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvi08kstlyi5q"
-path="res://.godot/imported/flower_pink.png-ea16a1d092d0652d4d9366902df1064e.ctex"
+uid="uid://clgo15w1lq8mb"
+path="res://.godot/imported/fume_shroom.png-7db2b3f5e2eb28bbe70fa56ef8f48b41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/placeholder/flower_pink.png"
-dest_files=["res://.godot/imported/flower_pink.png-ea16a1d092d0652d4d9366902df1064e.ctex"]
+source_file="res://assets/placeholder/fume_shroom.png"
+dest_files=["res://.godot/imported/fume_shroom.png-7db2b3f5e2eb28bbe70fa56ef8f48b41.ctex"]
 
 [params]
 
