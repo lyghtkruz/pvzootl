@@ -9,6 +9,6 @@ hit_points = 300
 sun_cost = 50
 dig_cost = 25
 has_attack = false
-attack_speed = 3.0
+attack_speed = 24.0
 is_ranged = false
 is_generator = true
