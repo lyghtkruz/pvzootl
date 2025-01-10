@@ -10,8 +10,5 @@ texture = ExtResource("2_ldg13")
 plant_resource = ExtResource("2_il527")
 projectile = ExtResource("4_3l5l1")
 
-[node name="detector" parent="." index="0"]
-target_position = Vector2(725, 0)
-
 [node name="spawn" type="Marker2D" parent="." index="2"]
 position = Vector2(24, -8)

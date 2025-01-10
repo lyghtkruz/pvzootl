@@ -31,3 +31,9 @@ static func get_visible_rect(texture: Texture2D) -> Rect2:
 		(max_x - min_x + 1),
 		(max_y - min_y + 1)
 	)
+
+static func get_random_point(top_left: Vector2, bottom_right: Vector2) -> Vector2:
+	var point: Vector2
+	point.x = randf_range(top_left.x, bottom_right.x)
+	point.y = randf_range(top_left.y, bottom_right.y)
+	return point

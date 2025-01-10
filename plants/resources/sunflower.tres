@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="Plants" load_steps=2 format=3 uid="uid://lk8rwff3yxep"]
+[gd_resource type="Resource" script_class="Plants" load_steps=4 format=3 uid="uid://lk8rwff3yxep"]
 
+[ext_resource type="Texture2D" uid="uid://d1tdpv1qrchbg" path="res://assets/placeholder/seed_packet newbg.png" id="1_co18p"]
 [ext_resource type="Script" path="res://plants/plant.gd" id="1_mlt7j"]
+[ext_resource type="Texture2D" uid="uid://d3gmka8ow5mh0" path="res://assets/placeholder/sunflower.png" id="2_k60eu"]
 
 [resource]
 script = ExtResource("1_mlt7j")
@@ -12,3 +14,6 @@ has_attack = false
 attack_speed = 24.0
 is_ranged = false
 is_generator = true
+card_back = ExtResource("1_co18p")
+card_image = ExtResource("2_k60eu")
+recharge_rate = 7.5

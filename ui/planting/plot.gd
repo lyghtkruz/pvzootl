@@ -44,3 +44,4 @@ func _click() -> void:
 	get_viewport().set_input_as_handled()
 	isAvailable = false
 	Game.plantingScene.plant()
+	Game.emit_signal("planted")

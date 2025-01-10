@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bhc34c3uso376"]
 
+[ext_resource type="Texture2D" uid="uid://d26m6cajb5784" path="res://assets/placeholder/lawnx5.png" id="1_ujwyt"]
 [ext_resource type="PackedScene" uid="uid://4is6m260yypj" path="res://ui/planting/plot.tscn" id="2_tduyb"]
-[ext_resource type="Texture2D" uid="uid://da0kx1plj172p" path="res://assets/placeholder/lawn.png" id="3_w6nip"]
 
 [node name="BaseGrid" type="Node2D"]
 metadata/_edit_vertical_guides_ = [1920.0]
@@ -10,19 +10,19 @@ metadata/_edit_horizontal_guides_ = [1080.0]
 [node name="lawn_day" type="TextureRect" parent="."]
 z_index = -100
 z_as_relative = false
-offset_left = 206.0
-offset_top = -63.9999
-offset_right = 2706.0
-offset_bottom = 1936.0
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("3_w6nip")
+offset_left = 288.0
+offset_top = -167.0
+offset_right = 2788.0
+offset_bottom = 1833.0
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("1_ujwyt")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 custom_minimum_size = Vector2(725, 475)
-offset_left = 404.0
-offset_top = 189.0
-offset_right = 1677.0
-offset_bottom = 1036.0
+offset_left = 506.0
+offset_top = 292.0
+offset_right = 1864.0
+offset_bottom = 1139.0
 mouse_filter = 2
 theme_override_constants/h_separation = 1
 theme_override_constants/v_separation = 1

@@ -3,6 +3,7 @@ extends Node
 var isPlanting: bool = false
 
 ## Signals
+signal planted
 signal planting
 signal sun
 signal snap
@@ -24,6 +25,7 @@ func _squelch_warnings() -> void:
 	if true:
 		return
 	
+	planted.emit()
 	planting.emit()
 	snap.emit()
 	sun.emit()

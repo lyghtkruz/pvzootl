@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_o5fm5")
 damage = 20
-speed = 150
+speed = 300
 projectile_path = "none"

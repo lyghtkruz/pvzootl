@@ -1,6 +1,8 @@
-[gd_resource type="Resource" script_class="Plants" load_steps=2 format=3 uid="uid://seu1mt8ftj51"]
+[gd_resource type="Resource" script_class="Plants" load_steps=4 format=3 uid="uid://seu1mt8ftj51"]
 
 [ext_resource type="Script" path="res://plants/plant.gd" id="1_cidgo"]
+[ext_resource type="Texture2D" uid="uid://d1tdpv1qrchbg" path="res://assets/placeholder/seed_packet newbg.png" id="1_s43gw"]
+[ext_resource type="Texture2D" uid="uid://c7kh2ak0p8if1" path="res://assets/placeholder/temp_pea.png" id="2_bimqa"]
 
 [resource]
 script = ExtResource("1_cidgo")
@@ -12,3 +14,6 @@ has_attack = true
 attack_speed = 1.425
 is_ranged = true
 is_generator = false
+card_back = ExtResource("1_s43gw")
+card_image = ExtResource("2_bimqa")
+recharge_rate = 7.5

@@ -9,3 +9,6 @@ extends Resource
 @export var attack_speed: float = 1.425
 @export var is_ranged: bool = true
 @export var is_generator: bool = false
+@export var card_back: Texture2D
+@export var card_image: Texture2D
+@export var recharge_rate: float = 5.0

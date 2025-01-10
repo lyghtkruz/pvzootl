@@ -4,7 +4,7 @@ extends Sprite2D
 @onready var hurtbox: Area2D = $hurtbox
 
 var hasHit: bool = false
-
+var distance: float = 1900.0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	hurtbox.area_entered.connect(_hit)
@@ -25,4 +25,6 @@ func _physics_process(delta: float) -> void:
 		set_physics_process(false)
 		return
 	
-	global_position.x = move_toward(global_position.x, 1500, delta * projectile_resource.speed)
+	global_position.x = move_toward(global_position.x, distance, delta * projectile_resource.speed)
+	if global_position.x >= distance:
+		queue_free()

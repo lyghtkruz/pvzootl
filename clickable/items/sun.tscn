@@ -1,19 +1,25 @@
-[gd_scene load_steps=7 format=3 uid="uid://5ty1lr228jyp"]
+[gd_scene load_steps=8 format=3 uid="uid://5ty1lr228jyp"]
 
 [ext_resource type="PackedScene" uid="uid://cs58ntl7klf8o" path="res://clickable/base_clickable_item.tscn" id="1_f4ee5"]
-[ext_resource type="Texture2D" uid="uid://8bqly3542dvh" path="res://assets/placeholder/sun.png" id="2_pbufa"]
+[ext_resource type="Texture2D" uid="uid://cch7olmwxi1o0" path="res://assets/placeholder/new_sun.png" id="2_enx2x"]
 [ext_resource type="Resource" uid="uid://yuxhhetldwbp" path="res://clickable/resources/sun_resource.tres" id="3_6yxtm"]
 [ext_resource type="Script" path="res://components/drop_in.gd" id="4_84752"]
 [ext_resource type="Script" path="res://components/spin.gd" id="5_kef6r"]
+[ext_resource type="Script" path="res://components/auto_click.gd" id="5_v34c8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bw18j"]
-radius = 26.0
+radius = 60.0
 
 [node name="sun" instance=ExtResource("1_f4ee5")]
 z_index = 100
 z_as_relative = false
-texture = ExtResource("2_pbufa")
-item_res = ExtResource("3_6yxtm")
+position = Vector2(1, 0)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_enx2x")
+script = null
+
+[node name="click_area" parent="." index="0"]
+position = Vector2(-4, 0)
 
 [node name="click_shape" parent="click_area" index="0"]
 shape = SubResource("CircleShape2D_bw18j")
@@ -23,3 +29,8 @@ script = ExtResource("4_84752")
 
 [node name="Spin" type="Node" parent="." index="2"]
 script = ExtResource("5_kef6r")
+
+[node name="AutoClick" type="Node" parent="." index="3" node_paths=PackedStringArray("signal_reader")]
+script = ExtResource("5_v34c8")
+item_res = ExtResource("3_6yxtm")
+signal_reader = NodePath("../click_area")
