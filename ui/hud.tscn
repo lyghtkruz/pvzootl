@@ -12,8 +12,8 @@ default_font = ExtResource("2_6to8f")
 script = ExtResource("1_i1ix1")
 
 [node name="bar" type="GridContainer" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1918.0
+offset_bottom = 250.0
 columns = 8
 
 [node name="sun_label" type="Label" parent="bar"]

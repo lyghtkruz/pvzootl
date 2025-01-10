@@ -20,39 +20,42 @@ offset_left = 2.0
 offset_top = 3.0
 offset_right = 507.0
 offset_bottom = 708.0
-scale = Vector2(0.24, 0.24)
+scale = Vector2(0.35, 0.35)
 mouse_filter = 0
 texture = ExtResource("3_slav7")
 
 [node name="plant_shadow" type="TextureRect" parent="."]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_left = 11.0
-offset_top = 42.0
-offset_right = 120.0
-offset_bottom = 123.0
+offset_left = 43.0
+offset_top = 98.0
+offset_right = 152.0
+offset_bottom = 179.0
 mouse_filter = 2
 texture = ExtResource("4_v1u4x")
 stretch_mode = 4
 
 [node name="plant" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 44.0
-offset_right = 117.0
-offset_bottom = 125.0
+offset_left = 40.0
+offset_top = 100.0
+offset_right = 149.0
+offset_bottom = 181.0
 mouse_filter = 2
 texture = ExtResource("4_v1u4x")
 stretch_mode = 4
 
 [node name="plant_cost_label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 36.0
-offset_top = 138.0
-offset_right = 76.0
-offset_bottom = 170.0
+offset_left = 9.0
+offset_top = 196.0
+offset_right = 171.0
+offset_bottom = 243.0
 theme = ExtResource("5_3mlkf")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 44
 text = "100"
+horizontal_alignment = 1
+vertical_alignment = 2

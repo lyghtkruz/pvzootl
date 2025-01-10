@@ -5,11 +5,14 @@ extends Node
 @onready var item
 @onready var target: Vector2
 
+const TOP_LEFT: Vector2 = Vector2(295.0, 525.0)
+const BOTTOM_RIGHT: Vector2 = Vector2(1005.0, 1825.0)
+
 func _ready() -> void:
 	item = get_parent()
 	# TODO: Spawn on grid for target position 
-	item.global_position = Vector2(randi_range(280, 960), 5.0)
-	target.y = randi_range(400, 780)
+	target = lyght.get_random_point(TOP_LEFT, BOTTOM_RIGHT)
+	item.global_position.x = int(target.x)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:

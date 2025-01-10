@@ -7,7 +7,7 @@ var sun: int = 0
 
 func _ready() -> void:
 	Game.sun.connect(_update_sun)
-	_update_sun(100)
+	_update_sun(50)
 
 func _update_sun(val: int = 0) -> void:
 	sun += val

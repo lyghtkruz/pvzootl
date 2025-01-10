@@ -10,3 +10,14 @@ card_resource = ExtResource("2_yvblf")
 plant_resource = ExtResource("3_hb5o7")
 plant_scene = ExtResource("4_l4eo3")
 plant_cost = 50
+
+[node name="plant" parent="." index="2"]
+offset_left = 41.0
+offset_right = 150.0
+
+[node name="plant_cost_label" parent="." index="3"]
+offset_left = 10.0
+offset_top = 197.0
+offset_right = 170.0
+offset_bottom = 242.0
+vertical_alignment = 1
