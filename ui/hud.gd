@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 @onready var bar: GridContainer = $bar
-@onready var sun_label: Label = $bar/sun_label
+@onready var sun_label: Label = $bar/TotalSun/sun_label
 
 var sun: int = 0
 
@@ -11,7 +11,7 @@ func _ready() -> void:
 
 func _update_sun(val: int = 0) -> void:
 	sun += val
-	sun_label.text = "Sun\n%d" % sun
+	sun_label.text = "%s" % sun
 	hud_refresh()
 
 func hud_refresh() -> void:

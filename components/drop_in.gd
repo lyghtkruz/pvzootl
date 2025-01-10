@@ -5,8 +5,8 @@ extends Node
 @onready var item
 @onready var target: Vector2
 
-const TOP_LEFT: Vector2 = Vector2(295.0, 525.0)
-const BOTTOM_RIGHT: Vector2 = Vector2(1005.0, 1825.0)
+const TOP_LEFT: Vector2 = Vector2(525.0, 295.0)
+const BOTTOM_RIGHT: Vector2 = Vector2(1825.0, 1005.0)
 
 func _ready() -> void:
 	item = get_parent()

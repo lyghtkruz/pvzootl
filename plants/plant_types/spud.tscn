@@ -1,0 +1,9 @@
+[gd_scene load_steps=4 format=3 uid="uid://7bhll1v8xbxf"]
+
+[ext_resource type="PackedScene" uid="uid://1odbo8rcduov" path="res://plants/BasePlant.tscn" id="1_ewubl"]
+[ext_resource type="Texture2D" uid="uid://dxj1kkxq27lpf" path="res://assets/placeholder/Untitled8_20241228224525.png" id="2_kp3n8"]
+[ext_resource type="Resource" uid="uid://ykcxc01dtvj" path="res://plants/resources/spud.tres" id="3_8scyl"]
+
+[node name="spud" instance=ExtResource("1_ewubl")]
+texture = ExtResource("2_kp3n8")
+plant_resource = ExtResource("3_8scyl")

@@ -7,4 +7,4 @@ script = ExtResource("1_na752")
 attack_speed = 0.5
 damage = 100
 hit_points = 270
-speed = 10
+speed = 15

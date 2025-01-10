@@ -15,7 +15,11 @@ Log/break_on_error=false
 [application]
 
 config/name="pvzootl"
+run/main_scene="res://ui/screens/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://assets/placeholder/logo_1.png"
+boot_splash/fullsize=false
 config/icon="res://icon.svg"
 
 [autoload]

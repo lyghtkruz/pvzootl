@@ -1,9 +1,0 @@
-[gd_scene load_steps=4 format=3 uid="uid://cqpmol8t0t4d1"]
-
-[ext_resource type="PackedScene" uid="uid://ce7luqaidcv0i" path="res://ui/base_plant_picker.tscn" id="1_ryoyp"]
-[ext_resource type="Resource" uid="uid://t3g2uopsao40" path="res://ui/cards_resources/peashooter.tres" id="2_2qg0i"]
-[ext_resource type="Resource" uid="uid://seu1mt8ftj51" path="res://plants/resources/pea_shooter.tres" id="3_qxyfp"]
-
-[node name="peashooter" instance=ExtResource("1_ryoyp")]
-card_resource = ExtResource("2_2qg0i")
-plant_resource = ExtResource("3_qxyfp")

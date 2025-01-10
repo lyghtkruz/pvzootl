@@ -83,6 +83,9 @@ func plant() -> void:
 	Game.isPlanting = false
 	Game.plantingScene = null
 	detector.global_position = global_position
+	if not plant_resource.is_generator:
+		var length: Vector2 = Vector2(1850.0, 0.0) - detector.global_position
+		detector.target_position = Vector2(length.x, 0.0)
 	isPlanted = true
 	isZombieNear = true
 	set_physics_process(true)
